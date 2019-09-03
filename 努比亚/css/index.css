@@ -1,0 +1,393 @@
+/*头部区域*/
+.top{
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.top .top_in{
+    width: 1200px;
+    height: 100%;
+    /*background-color: palegoldenrod;*/
+    margin: 0 auto;
+}
+.top .top_in .logo{
+    float: left;
+    width: 190px;
+    height: 100%;
+    /*background-color: yellow;*/
+}
+.top .top_in .logo h1{
+    height: 100%;
+}
+.top .top_in .logo a{
+    display: inline-block;
+    width: 190px;
+    height: 100%;
+    background:url('../images/nubia-logo.png') no-repeat;
+
+}
+.top .top_in .nav {
+    float: right;
+    width: 740px;
+    height: 100%;
+    /*background-color:palevioletred;*/
+}
+.top .top_in .nav .nav_left{
+    float: left;
+    width: 550px;
+    height: 100%;
+    /*background-color:rosybrown;*/
+}
+.top .top_in .nav .nav_left ul{
+    width: 550px;
+    height: 100%;
+    line-height: 60px;
+
+}
+.top .top_in .nav .nav_left ul li{
+    float: left;
+    list-style: none;
+    margin-left:40px;
+}
+.top .top_in .nav .nav_left ul li a{
+    /*text-decoration: none;*/
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+.top .top_in .nav .nav_right{
+    float: right;
+    width: 180px;
+    height: 100%;
+    /*background-color: navajowhite;*/
+}
+.top .top_in .nav .nav_right ul {
+    width: 100%;
+    line-height: 60px;
+}
+.top .top_in .nav .nav_right ul li{
+    float: right;
+    list-style: none;
+    margin-left: 10px;
+}
+.top .top_in .nav .nav_right ul li:nth-child(3){
+    width: 33px;
+    height: 30px;
+    background: url("../images/nubia-syb-all.png") 0 0;
+    margin-top: 15px;
+}
+.top .top_in .nav .nav_right ul li a{
+    color: #ccc;
+
+}
+/*广告区域*/
+.ad{
+    width: 100%;
+    height: 863px;
+    /*background-color: pink;*/
+    margin-top: 60px;
+    position: relative;
+
+}
+
+.ad .banner{
+    width: 100%;
+    height: 121px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+}
+.ad .banner .banner_in{
+    width: 1200px;
+    height: 100%;
+    /*background-color: rosybrown;*/
+    margin: 0 auto;
+}
+.ad .banner .banner_in ul{
+    width: 1200px;
+    height: 121px;
+    padding:0 75px;
+    padding-top: 15px;
+    box-sizing:border-box;
+}
+.ad .banner_in ul li{
+    float: left;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+
+}
+.ad .banner_in ul li:hover{
+    border-bottom:2px solid red;
+}
+.ad .banner_in ul li img{
+    width: 120px;
+    height: 80px;
+}
+.ad .banner_in ul li p{
+    color: #666;
+}
+.ad .figure{
+    width: 100%;
+    height: 600px;
+    background-color: palegoldenrod;
+    text-align: center;
+}
+.ad .figure img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.ad .figure{
+    position: relative;
+}
+.ad .figure ul{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 15px;
+    /*background-color:lawngreen;*/
+}
+.ad .figure ul li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin-left: 15px;
+    border: 2px solid transparent;
+    transition: all 1s;
+}
+.ad .figure ul li:hover{
+    border: 2px solid red;
+    background-color: transparent;
+    transform: scale(1.2,1.2);
+}
+.ad .video{
+    width: 100%;
+    height: 250px;
+    /*background-color: chocolate;*/
+}
+.ad .video ul{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top:10px;
+    /*background-color: rosybrown;*/
+    display: flex;
+    justify-content: space-between;
+}
+.ad .video ul li{
+    height: 250px;
+    width: 396px;
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+.ad .video ul li>img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.ad .video_info{
+    width: 100%;
+    height: 155px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    opacity: 0;
+}
+.ad .video li:hover>img{
+    opacity: 0.5;
+}
+.ad .video li:hover .video_info{
+    opacity: 1;
+}
+.ad .video li:hover .video_info img{
+    animation: sport 2s ease-in-out 0.5s infinite normal;
+}
+@keyframes sport {
+    20%{
+        transform: scale(0.8);
+    }
+    40%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(0.9);
+    }
+    80%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.ad .video_info h3{
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+}
+
+
+/*内容区域*/
+.content{
+    width: 100%;
+    height: 1883px;
+    /*background-color: palegreen;*/
+}
+.content dl{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /*background-color: darkblue;*/
+}
+.content dl dt{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.content dl dt h3{
+    font-size: 35px;
+    color: #333;
+}
+.content dl dt p{
+    color: red;
+    margin-top: 20px;
+}
+.content dl .phone{
+    width: 1200px;
+    height: 1200px;
+    /*background-color: palegoldenrod;*/
+}
+.content dl .phone li{
+    float: left;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.content dl .phone li:nth-child(1){
+    width: 100%;
+    height: 395px;
+    /*background-color: white;*/
+    margin-bottom:10px;
+}
+.content dl .phone li>img{
+    width: 100%;
+    transition: all 1s;
+}
+.content dl .phone li:nth-child(1)>img{
+    margin-top: 60px;
+    margin-left:-100px;
+
+}
+
+.content dl .phone li:nth-child(1)>img:hover{
+    margin-left:0;
+}
+
+.content dl .phone li:nth-child(2){
+    width: 395px;
+    height: 795px;
+    /*background-color: firebrick;*/
+    margin-right: 10px;
+}
+.content dl .phone .s>img:hover{
+    transform: scale(1.2);
+}
+
+.content dl .phone li:nth-child(3){
+    width: 795px;
+    height: 390px;
+    /*background-color: lawngreen;*/
+    margin-bottom: 10px;
+}
+.content dl .phone li:nth-child(3)>img{
+    margin-left:100px;
+}
+.content dl .phone li:nth-child(3)>img:hover{
+    margin-left:0;
+}
+.content dl .phone li:nth-child(4){
+    width: 390px;
+    height: 395px;
+    /*background-color: skyblue;*/
+    margin-right: 10px;
+}
+.content dl .phone li:nth-child(5){
+    width: 395px;
+    height: 395px;
+    /*background-color: navajowhite;*/
+}
+.content .phone .phone_des{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+    text-align: center;
+}
+.content .phone li:nth-of-type(1)>div{
+    left: 1000px;
+    top:50%;
+    margin-top:-58px;
+}
+.content .phone .phone_des h3{
+    font-size: 20px;
+    color: #000;
+}
+
+.content .phone .phone_des p:nth-of-type(1){
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.content .phone .phone_des p:nth-of-type(2){
+    display: inline-block;
+    width: 108px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    color: #000;
+}
+
+.content .accessories ul{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:space-between;
+}
+.content .accessories ul li{
+    width: 295px;
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.content .accessories ul li img{
+    width: 100%;
+    transition: all 1s;
+}
+
+.content .accessories ul li img:hover{
+    transform: scale(1.2);
+}
+.content .accessories ul li p{
+    margin-top: 25px;
+}
+/*尾部区域*/
+.footer{
+    width: 100%;
+    height: 396px;
+    background-color: palevioletred;
+}

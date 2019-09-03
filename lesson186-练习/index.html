@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正方体、长方体案例</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            perspective: 500px;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            /*border: 1px solid #000;*/
+            margin: 100px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            /*transform: rotateY(60deg) rotateX(30deg);*/
+            animation: sports 4s linear 0s infinite normal;
+
+        }
+        @keyframes sports {
+            from{
+                transform: rotateX(0deg);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+
+        ul li{
+            list-style: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+        }
+        ul li img{
+            width: 200px;
+            height: 200px;
+        }
+        ul li:nth-child(1){
+            transform: scale(2,1) rotateX(90deg) translateZ(100px);
+        }
+        ul li:nth-child(2){
+            transform: scale(2,1) rotateX(180deg) translateZ(100px);
+        }
+        ul li:nth-child(3){
+            transform: scale(2,1) rotateX(270deg) translateZ(100px);
+        }
+        ul li:nth-child(4){
+            transform: scale(2,1) rotateX(360deg) translateZ(100px);
+        }
+        ul li:nth-child(5){
+            transform: translateX(-100px) rotateY(90deg);
+        }
+        ul li:nth-child(6){
+            transform: translateX(100px) rotateY(90deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="images/banner1.jpg" alt=""></li>
+    <li><img src="images/banner1.jpg" alt=""></li>
+    <li><img src="images/banner1.jpg" alt=""></li>
+    <li><img src="images/banner1.jpg" alt=""></li>
+    <li><img src="images/banner1.jpg" alt=""></li>
+    <li><img src="images/banner1.jpg" alt=""></li>
+</ul>
+</body>
+</html>

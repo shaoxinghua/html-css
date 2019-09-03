@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扑克牌</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 310px;
+            height: 438px;
+            background-color: skyblue;
+            border: 1px solid #000;
+            margin: 100px auto;
+
+            perspective: 500px;
+
+        }
+
+        div img{
+            transform-origin: center bottom;
+            transition: all 1s;
+        }
+        div:hover img{
+            transform: rotateX(90deg);
+        }
+
+    </style>
+</head>
+<body>
+<div><img src="images/pk.png" alt=""></div>
+</body>
+</html>
