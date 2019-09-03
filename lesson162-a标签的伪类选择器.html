@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a标签的伪类选择器</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 800px;
+            height: 45px;
+            background-color: bisque;
+            margin: 100px auto;
+
+        }
+        ul li{
+            list-style: none;
+            float: left;
+            width: 100px;
+            line-height: 45px;
+            text-align: center;
+        }
+        ul li a{
+            display: inline-block;
+            width: 100px;
+
+
+
+        }
+
+      ul li a:link{
+          text-decoration: none;
+          background-color:pink;
+          color: #FFFFFF;
+      }
+        ul li a:visited{
+            color: #FFFFFF;
+        }
+        ul li a:hover{
+            background-color: #666666;
+            color: red;
+        }
+        ul li a:active{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+</ul>
+</body>
+</html>
